@@ -1,8 +1,10 @@
 language: ruby
 rvm:
-#  - "1.9.3"
-  - "2.0.0"
-#  - jruby-19mode # JRuby in 1.9 mode
-#  - rbx-19mode
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+- 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: hStsuqxSxPbmJr5KzR1qcwxPeHtdv58nCHRlCQidrYWTf+i4odGHlmopW3gyHqiaB1eqqWUKwXUlpx3RAr9Pcz5mdcsokfDyLbBY+hELL2C0zoTPIQwuQ9BvkO0QsAnW0j2F43Mct8hPlq1Utw8ds2q8w63dHr005xu6oE/elcM=
+  app: madbomber
+  on:
+    repo: MadBomber/madbomber
