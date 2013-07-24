@@ -42,13 +42,17 @@ gem 'unicorn'
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development]
+
+gem 'rake', group: [:test]
 
 ##############################################
 # Handy development/test tools
 
-group :development, :test do
+group :development do
   gem 'irbtools'
   gem 'irbtools-more'
+  gem 'terminal-notifier'
+  gem 'ruby_gntp'
 end
 
