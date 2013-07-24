@@ -1,58 +1,53 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+############################################
+# Constrained Libraries
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'bcrypt-ruby',    '~> 3.0.0'  # OpenBSD's bcrypt() password hashing algorithm.
+gem 'coffee-rails',   '~> 4.0.0'  # CoffeeScript adapter for the Rails asset pipeline.
+gem 'jbuilder',       '~> 1.2'    # Create JSON structures via a Builder-style DSL
+gem 'rails',          '4.0.0'     # Full-stack web application framework.
+gem 'sass-rails',     '~> 4.0.0'  # Sass adapter for the Rails asset pipeline.
+gem 'uglifier',       '>= 1.3.0'  # Ruby wrapper for UglifyJS JavaScript compressor
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'therubyracer', platforms: :ruby
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+############################################
+# Unconstrained Libraries
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'  # Use jQuery with Rails 3
+gem 'pg'            # A Ruby interface to the PostgreSQL RDBMS
+gem 'sqlite3'       # This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)
+gem 'turbolinks'    # Turbolinks makes following links in your web application faster (use with Rails Asset Pipeline)
+gem 'unicorn'       # Rack HTTP server for fast clients and Unix
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+##############################################
+# Documentation tools
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', require: false  # rdoc html with javascript search index.
 end
 
-# Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the app server
-gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-gem 'debugger', group: [:development]
-
-gem 'rake', group: [:test]
 
 ##############################################
-# Handy development/test tools
+# Handy development tools
+
+group :test do
+  gem 'rake'  # This rake is bundled with Ruby but required by Travis-CI to be here
+end
+
+
+##############################################
+# Handy development tools
 
 group :development do
-  gem 'irbtools'
-  gem 'irbtools-more'
-  gem 'terminal-notifier'
-  gem 'ruby_gntp'
+  gem 'debugger'            # Fast Ruby debugger - base + cli
+  gem 'irbtools'            # irbtools happy irb.
+  gem 'irbtools-more'       # irbtools-more adds advancded gems like bond or looksee to irbtools.
+  gem 'terminal-notifier'   # Send User Notifications on Mac OS X 10.8.
+  gem 'ruby_gntp'           # Ruby library for GNTP(Growl Notification Transport Protocol) client
 end
 
