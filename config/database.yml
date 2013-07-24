@@ -18,7 +18,7 @@ common: &common
 
 
 development:
-  << *common
+  <<: *common
   database: mbs_development
   host:     127.0.0.1
   username: dvanhoozer
@@ -29,12 +29,12 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  << *common
+  <<: *common
   database: mbs_test
 
 
 production:
-  << *common
+  <<: *common
   database: mbs_production
 
 
