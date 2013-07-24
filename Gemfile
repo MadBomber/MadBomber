@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.0.0"
+
 ############################################
 # Constrained Libraries
 
@@ -18,7 +20,6 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'  # Use jQuery with Rails 3
 gem 'pg'            # A Ruby interface to the PostgreSQL RDBMS
-gem 'sqlite3'       # This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)
 gem 'turbolinks'    # Turbolinks makes following links in your web application faster (use with Rails Asset Pipeline)
 gem 'unicorn'       # Rack HTTP server for fast clients and Unix
 

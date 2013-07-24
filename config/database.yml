@@ -1,25 +1,43 @@
-# SQLite version 3.x
-#   gem install sqlite3
+######################################################
+###
+##  File: database.yml
+##  Desc: Defines the database environment
+##
+##        Since Heroku over-writes this file, the production
+##        setting is basically ignored.  Only the development
+##        and test environments have any consequence.  With CI
+##        testing being done by Travis its possible that the
+##        test environment is useless as well.
 #
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
+
+common: &common
+  adapter:  postgresql
+  encoding: unicode
+  pool:     5
+  timeout:  5000
+
+
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
+  << *common
+  database: mbs_development
+  host:     127.0.0.1
+  username: dvanhoozer
+  password: 
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+  << *common
+  database: mbs_test
+
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  << *common
+  database: mbs_production
+
+
+
+#####################################
+
