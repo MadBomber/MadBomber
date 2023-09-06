@@ -1,6 +1,6 @@
-<h1 align="center">I'm DewayneKbr />o-*</h1>
+<h1 align="center">Welcome, I'm Dewayne</h1>
 
-<h3 align="center">I am a Ruby Developer for close to two decades, a Team Leader and Technical Manager.</h3>
+<h3 align="center">I am a Ruby Developer (for close to two decades), a Team Leader and Technical Manager.</h3>
 
 <p align="left"> <a href="https://twitter.com/madbomber0" target="blank"><img src="https://img.shields.io/twitter/follow/madbomber0?logo=twitter&style=for-the-badge" alt="gregmolnar" /></a> </p>
 
