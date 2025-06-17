@@ -1,18 +1,18 @@
 <h1 align="center">Welcome, I'm Dewayne</h1>
 
-<h3 align="center">I am a Ruby Developer (for close to two decades), a Team Leader and Technical Manager.</h3>
+<h3 align="center">I am a Ruby Developer (since 2005), a Team Leader and Technical Manager.</h3>
 
-<p align="left"> <a href="https://twitter.com/madbomber0" target="blank"><img src="https://img.shields.io/twitter/follow/madbomber0?logo=twitter&style=for-the-badge" alt="gregmolnar" /></a> </p>
+<p align="center"> <a href="https://twitter.com/madbomber0" target="blank"><img src="https://img.shields.io/twitter/follow/madbomber0?logo=twitter&style=for-the-badge" alt="gregmolnar" /></a> </p>
 
-- 🔭 I am currently working on a new gem "sqa" to do stock qualitative analysis on portfolios.
-- I am also attempting to birth a new non-profit organization -- MinistryOnline.church -- to help small churches build and maintain their front door on the internet.  Its a digital world and we are all a digital generation.
+- 🔭 I am currently working on a new gem "sqa" to do stock qualitative analysis on portfolios.  I don't know which is easier: predicting the next number to appear on the roulette wheel or forecasting individual stock price movements 2 weeks (or even one day) in advance.  I've been thinking about a probability cone over time much like the national hurricane center forcasts the track of storms.
+- 🔭 I am also working on a context management system for large language models which is both temporal as well as within a semantic distance which mimics the human brain's hierarchical-temporal memory structure like short-term, working0 and long-term memory based upon either gross recollections or detailed recollections.
 
-
+<!--
 <h3 align="left">Connect with me:</h3>
 <p align="left">
   <a href="https://twitter.com/madbomber0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="gregmolnar" height="30" width="40" /></a>
 
-  <!--
+  
   <a href="https://madbomberr.io/feed.xml" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://greg.molnar.io/feed.xml" height="30" width="40" /></a>
 
   <a href="https://www.getrevue.co/profile/gregmolnar" style="display: flex; ">
